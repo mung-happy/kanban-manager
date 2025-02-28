@@ -20,7 +20,7 @@ const columnSlice = createSlice({
     addColumn: (state, action) => {
       state.push(action.payload);
     },
-    setColumns: (state, action) => {
+    setColumns: (_, action) => {
       return action.payload;
     },
     setColumnsDrag: (state, action) => {
